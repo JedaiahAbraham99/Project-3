@@ -1,0 +1,64 @@
+body{
+    font-size: medium;
+    color: #faeaab;
+    font-family: 'Roboto';
+    background-color: rgb(165, 85, 102);
+    
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    background-color: #faeaab;
+}
+.navbar-brand{
+    font-family: 'Fira Sans';
+    
+    }
+h1{
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 100pxs;
+    color: coral;
+}
+h2{
+    font-family: 'Fira Sans';
+    font-size: 30px;
+    font-weight: bold;
+    color: coral;
+}
+.top-pictures{
+    display: inline-flex;
+    justify-content: space-between;
+    padding: auto;
+    padding-left: 90px;
+}
+.customer-contact-info{
+    display: grid;
+    justify-content: center;
+}
+.pizza-quantity-size{
+    display: grid;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.toppings-box{
+    display: grid;
+    justify-content: center;
+}
+.submit-button{
+    display: grid;
+    justify-content: center;
+}
+.order-summary{
+   padding-top: 90px;
+    display: grid;
+    justify-content: center; 
+}
+.confirmation-text{
+    display: grid;
+    justify-content: center
+}
