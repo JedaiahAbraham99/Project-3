@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Bon Pizza! </title>
+    
+        <!--Bootstrap-->
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        
+        <link rel="stylesheet" href="css/stylesheet1.css">
+        <!--Javasript-->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+         <!--Custom Google Fonts-->
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Roboto&family=Ubuntu&display=swap');
+            header> h1 {
+           font-family: 'Roboto';
+
+         }
+        </style>
+        <meta name="viewport"content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-light" style="background-color: #fad5ab;">
+            <a class="navbar-brand" href="#">Bon Pizza!</a>
+          </nav>
+
+        <h1> Create Your Pizza Here </h1>
+        
+        <img src="images/pepperoni-pizza.png" alt="pizza 1" class="img-thumbnail">
+        <hr>
+        <form id="Order-Info" action="orderPage.html" method="POST">
+            <!-- User Data Info-->
+            <h2> Contact Information </h2>
+            <ul>
+                <label> Please Enter Your Contact information Below</label>
+                <li>
+                    <label for="Name"> Name: </label>
+                    <input type="text" id="client_Name"> 
+                </li>
+                <li>
+                    <label for="Number"> Tel. Number: </label>
+                    <input type="text" id="client_phoneNumber">   
+                </li>
+            </ul>
+            <hr>
+            <h2> Number Of Pizzas In Your Order </h2>
+            <label for="Quantity"> Quantity: </label>
+            <input type="text" id="Quantity" class="totalPizzasOrdered">
+            <hr>
+            <!-- Drop Down Menu for Pizza Sizes-->
+           <h2> Pizza Sizes </h2>
+
+            <select class="Pizza-sizes">
+                <option> Small </option>
+                <option> Medium </option>
+                <option> Large </option>
+            </select>
+            <br>
+            <img src="images/mushroom pizza.jpg" alt="mushroom pizza" class="img-thumbnail">
+            <br>
+            <hr>
+            <!-- Toppings Selection-->
+            <h2> Pizza Toppings </h2>
+
+            <div class="toppingsBox">
+                <label> Please Select Your Toppings Below</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="Toppings1">
+                    <label class="form-check-label" for="Toppings1">
+                    Cheese
+                 </label>
+                 </div>
+                
+                  <div class="form-check">
+                 <input class="form-check-input" type="checkbox" value="" id="Toppings2">
+                  <label class="form-check-label" for="Toppings3">
+                    Mushrooms
+                    </label>
+                 </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="Toppings3">
+                     <label class="form-check-label" for="Toppings4">
+                    Pineapples
+                    </label>
+                 </div>
+              <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="Toppings4">
+                     <label class="form-check-label" for="Toppings5">
+                    Grilled Chicken
+                     </label>
+                 </div>
+               <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="Toppings5">
+                     <label class="form-check-label" for="Toppings6">
+                    Pepperoni
+                     </label>
+                </div>
+                
+             </div>
+                <br>
+                <br>
+                <br>
+                <br>
+            <input type="submit" href="orderPage.html" value="Submit Order"></form>
+        
+    </body>
+    <script src="pizzaData.js" charset="utf-8"></script>
+
+</html>
